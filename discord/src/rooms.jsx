@@ -8,11 +8,14 @@ export default function Rooms() {
           <h2 className="font-bold">Server Name</h2>
           <p className=" font-black rotate-90"> > </p>
         </div>
-        <div className="w-full flex justify-between items-center">
-          <div>
-            <h2 className="font-bold ml-4"># Chat-Room</h2>
+        <div className="w-2/3 flex justify-between items-center">
+          <div className="flex ml-4 items-center">
+            <span className="text-4xl">#</span>
+            <h2 className="font-bold ml-2">Chat-Room</h2>
+            <span className="text-xl font-thin mx-2">|</span>
+            <p className="text-sm">random popisek roomky</p>
           </div>
-          <div>
+          <div className="flex">
             icons, search and more...
           </div>
         </div>
