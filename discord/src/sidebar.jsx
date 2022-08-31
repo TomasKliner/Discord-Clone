@@ -3,8 +3,8 @@
 
 export default function Sidebar(){
     return(
-        <sidebar>
-            s
-        </sidebar>
+        <div className="h-screen w-64 bg-slate-900">
+           test 
+        </div>
     )
 }
