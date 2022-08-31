@@ -1,15 +1,20 @@
 import Sidebar from './sidebar';
 import Header from './header';
 import { Fragment } from 'react';
+import Rooms from "./rooms"
 
 function App() {
 
   return (
     <Fragment>
-      <Sidebar />
       <Header />
-      <div className='w-32 h-32 bg-red-600'>
-        ss
+      <div className='flex'>
+        <Sidebar />
+
+        <div className='bg-neutral-600 h-screen w-full flex'>
+          <Rooms />
+        </div>
+
       </div>
     </Fragment>
   );
