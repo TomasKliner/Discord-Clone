@@ -1,7 +1,7 @@
 import Sidebar from './sidebar';
 import Header from './header';
 import { Fragment } from 'react';
-import Rooms from "./rooms"
+import Main from "./main"
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
         <Sidebar />
 
         <div className='bg-neutral-600 h-screen w-full flex'>
-          <Rooms />
+          <Main />
         </div>
 
       </div>
