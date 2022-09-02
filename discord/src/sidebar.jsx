@@ -4,8 +4,8 @@ export default function Sidebar(){
     return(
         <div className="h-screen w-16 p-2 bg-neutral-800 flex flex-col shadow">
 
-            <div className="relative mb-4">
-            <img className="relative shadow rounded-full bg-neutral-700 p-2 hover:bg-indigo-600 hover:rounded-2xl" src="./icons8-discord-new-150.png" alt="logo"></img>
+            <div className="group relative mb-4 cursor-pointer">
+            <img className="group-hover:bg-indigo-600 relative shadow rounded-full bg-neutral-700 p-2 group-hover:rounded-2xl" src="./icons8-discord-new-150.png" alt="logo"></img>
             <span className="border-neutral-800 bg-red-500 text-center text-white border-4
             rounded-full w-contain absolute -bottom-[4px] -right-[4px] p-[0.2rem] text-[0.5rem] font-bold px-1.5">10</span>
             </div>
