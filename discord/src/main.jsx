@@ -1,17 +1,18 @@
 import logo from "./logo.svg";
 import Rooms from "./rooms";
+import Chat from "./chat";
 
 export default function Main() {
   return (
     <div className="flex flex-col text-white bg-red-200 w-full">
       <div className="w-full bg-neutral-500 text-white border-b-2 border-neutral-800 shadow flex">
-        <div className="flex justify-between p-4 w-1/3 bg-neutral-600">
+        <div className="flex justify-between p-4 w-[20rem] bg-neutral-600">
           <h2 className="font-bold">Server Name</h2>
           <p className=" font-black rotate-90" > > </p>
         </div>
         <div className="w-2/3 flex justify-between items-center">
           <div className="flex ml-4 items-center">
-            <span className="text-4xl">#</span>
+            <span className="text-4xl text-neutral-300 font-light">#</span>
             <h2 className="font-bold ml-2">Chat-Room</h2>
             <span className="text-xl font-thin mx-2">|</span>
             <p className="text-sm">random popisek roomky</p>
@@ -20,9 +21,9 @@ export default function Main() {
         </div>
       </div>
       <div className="flex bg-neutral-500 w-full h-full">
-        <div className="flex flex-col w-1/3">
-          <div className="bg-neutral-600 w-full h-full"><Rooms />
-          
+        <div className="flex flex-col w-[20rem]">
+          <div className="bg-neutral-600 w-[20rem] h-full">
+            <Rooms />
           </div>
           <div className="bg-neutral-700 w-full flex items-center justify-between p-2">
             <div className="flex hover:bg-neutral-500 p-1 rounded-md">
@@ -77,8 +78,8 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="w-1/3">Chat</div>
-        <div className="w-1/3 bg-neutral-600">Names</div>
+        <div className="w-full"><Chat /></div>
+        <div className="min-w-[20rem] bg-neutral-600">Names</div>
       </div>
     </div>
   );
