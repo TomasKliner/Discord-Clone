@@ -7,23 +7,28 @@ export default function Main() {
   return (
     <div className="flex flex-col text-white bg-red-200 w-full">
       <div className="w-full bg-neutral-500 text-white border-b-2 border-neutral-800 shadow flex">
-        <div className="flex justify-between p-4 w-[20rem] bg-neutral-600">
+        <div className="flex justify-between p-4 min-w-[20rem] bg-neutral-600">
           <h2 className="font-bold">Server Name</h2>
-          <p className=" font-black rotate-90" > > </p>
+          <p className=" font-black rotate-90"> > </p>
         </div>
-        <div className="w-2/3 flex justify-between items-center">
+        <div className="w-full flex justify-between items-center">
           <div className="flex ml-4 items-center">
             <span className="text-4xl text-neutral-300 font-light">#</span>
             <h2 className="font-bold ml-2">Chat-Room</h2>
             <span className="text-xl font-thin mx-2">|</span>
             <p className="text-sm">random popisek roomky</p>
           </div>
-          <div className="flex">icons, search and more...</div>
+          <div className="flex mx-2">
+            <div className="relative">
+              <input type="text" class="w-32 transition-all hover:w-48 bg-neutral-800 rounded placeholder:text-neutral-300 text-sm p-1 outline-none" placeholder="Find" />
+              <img src="./search.png" alt="btn" className="w-5 h-5 absolute bottom-1 right-1 filter invert grayscale brightness-[100]"/>
+            </div>
+            </div>
         </div>
       </div>
-      <div className="flex bg-neutral-500 w-full h-full">
-        <div className="flex flex-col w-[20rem]">
-          <div className="bg-neutral-600 w-[20rem] h-full">
+      <div className="flex bg-neutral-500 w-full h-full ">
+        <div className="flex flex-col w-[20rem] ">
+          <div className="bg-neutral-600 w-[20rem]  h-full">
             <Rooms />
           </div>
           <div className="bg-neutral-700 w-full flex items-center justify-between p-2">
@@ -79,8 +84,12 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="w-full"><Chat /></div>
-        <div className="min-w-[20rem] bg-neutral-600"><Users /></div>
+        <div className="w-full">
+          <Chat />
+        </div>
+        <div className="min-w-[20rem] bg-neutral-600">
+          <Users />
+        </div>
       </div>
     </div>
   );
