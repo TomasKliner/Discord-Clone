@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import Rooms from "./rooms";
 import Chat from "./chat";
+import Users from "./users";
 
 export default function Main() {
   return (
@@ -79,7 +80,7 @@ export default function Main() {
           </div>
         </div>
         <div className="w-full"><Chat /></div>
-        <div className="min-w-[20rem] bg-neutral-600">Names</div>
+        <div className="min-w-[20rem] bg-neutral-600"><Users /></div>
       </div>
     </div>
   );
