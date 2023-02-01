@@ -6,8 +6,8 @@ import Users from "./users";
 export default function Main() {
   return (
     <div className="flex flex-col text-white bg-red-200 w-full">
-      <div className="w-full bg-neutral-500 text-white border-b-2 border-neutral-800 shadow flex">
-        <div className="flex justify-between p-4 min-w-[20rem] bg-neutral-600">
+      <div className="w-full bg-neutral-600 text-white border-b-2 border-neutral-800 shadow flex">
+        <div className="flex justify-between p-4 min-w-[20rem] bg-neutral-700">
           <h2 className="font-bold">Server Name</h2>
           <p className=" font-black rotate-90"> > </p>
         </div>
@@ -16,7 +16,7 @@ export default function Main() {
             <span className="text-4xl text-neutral-300 font-light">#</span>
             <h2 className="font-bold ml-2">Chat-Room</h2>
             <span className="text-xl font-thin mx-2">|</span>
-            <p className="text-sm">random popisek roomky</p>
+            <p className="text-sm">Description of the room</p>
           </div>
           <div className="flex mx-2">
             <div className="relative">
@@ -28,7 +28,7 @@ export default function Main() {
       </div>
       <div className="flex bg-neutral-500 w-full h-full ">
         <div className="flex flex-col w-[20rem] ">
-          <div className="bg-neutral-600 w-[20rem]  h-full">
+          <div className="bg-neutral-700 w-[20rem]  h-full">
             <Rooms />
           </div>
           <div className="bg-neutral-700 w-full flex items-center justify-between p-2">
@@ -87,7 +87,7 @@ export default function Main() {
         <div className="w-full">
           <Chat />
         </div>
-        <div className="min-w-[20rem] bg-neutral-600">
+        <div className="min-w-[20rem] bg-neutral-700">
           <Users />
         </div>
       </div>

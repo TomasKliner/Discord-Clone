@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 
 export default function Chat() {
   return (
-    <div className="flex flex-col justify-between h-full">
+    <div className="flex flex-col justify-between h-full bg-neutral-600">
       <div className=" overflow-y-auto overflow-x-hidden">
         {/* Chat messages section*/}
 
@@ -14,7 +14,7 @@ export default function Chat() {
 
         <section className="">
 
-        <div className="flex hover:bg-neutral-600 p-1 rounded-md m-2">
+        <div className="flex hover:bg-neutral-700 p-1 rounded-md m-2">
           <img src={logo} alt="profile" className="w-12 h-12 cursor-pointer mx-2"></img>
           <div className="ml-2">
             <h4 className="text-cyan-400 font-bold text-md cursor-pointer flex items-end">
@@ -32,7 +32,7 @@ export default function Chat() {
 
       <div className="w-full">
         {/* Input section*/}
-        <div className="m-auto w-11/12 rounded-xl bg-neutral-600 mb-4 flex justify-between items-center">
+        <div className="m-auto w-11/12 rounded-xl bg-white bg-opacity-10 mb-4 flex justify-between items-center backdrop-blur-3xl">
             <label  className="bg-neutral-200 hover:bg-neutral-100 text-neutral-600 font-bold rounded-full aspect-square w-8 flex items-center justify-center text-xl ml-2 cursor-pointer">
             <input id="file_input" type="file" className="hidden"/>
               +

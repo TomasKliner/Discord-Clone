@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 
 export default function Users() {
   return (
-    <div className="flex flex-col justify-start">
+    <div className="flex flex-col justify-start bg-neutral-700">
       <div className="my-2">
         <div className="mx-2 flex items-center text-xs relative hover:text-white">
           Admin - 1
